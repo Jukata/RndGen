@@ -10,14 +10,14 @@ namespace RndGen.Generators
     {
 
         // int generator
-        public static int[] GenerateNumbers (int limit, int number = 1)
+        public static int[] GenerateNumbers (int upperLimit, int number = 1)
         {
             int[] generatedNumbers = new int[number];
             Random rn = new Random();
 
             for (int i = 0; i < generatedNumbers.Length; i++)
             {
-                generatedNumbers[i] = rn.Next(limit);
+                generatedNumbers[i] = rn.Next(upperLimit);
             }
 
             return generatedNumbers;

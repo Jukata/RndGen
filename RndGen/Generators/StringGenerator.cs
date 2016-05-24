@@ -53,6 +53,8 @@ namespace RndGen.Generators
                     char randomChar = letters[rnd.Next(letters.Length)];
                     word += randomChar.ToString();
                 }
+
+                wordsContainer[i] = word;
             }
 
             return string.Join(" ", wordsContainer);
